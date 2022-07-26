@@ -1,0 +1,51 @@
+media = 8
+se (media == 10) então
+a. mediaLetra = “A”
+senão se (media >= 9) então
+a. mediaLetra = “B”
+senão se (media >= 8) então
+a. mediaLetra = “C”
+senão se (media >= 7) então
+a. mediaLetra = “D”
+senão
+a. mediaLetra = “F”
+
+
+Com outra condição:
+
+media = 8
+se (media == 10) então
+a. mediaLetra = “A”
+senão se (media >= 9) E (media < 10) então
+a. mediaLetra = “B”
+senão se (media >= 8) E (media < 9) então
+a. mediaLetra = “C”
+senão se (media >= 7) E (media < 8) então
+a. mediaLetra = “D”
+senão 
+a. mediaLetra = “F”
+
+
+Todos os comandos que foram utilizados em pseudocódigo existem na linguagem Python. Se converter o pseudocódigo para Python, fica:
+
+Se CONDIÇÃO então -> if CONDIÇÃO :
+Senão se CONDIÇÃO então -> Elif CONDIÇÃO :
+Senão -> Else :
+
+Os dois pontos significam o “então” e precisam ser inseridos. Todos os comandos dentro do “if” precisam ser indentados, pois a Python é uma linguagem indentada.
+
+
+
+
+Código executado e deu certo no Python:
+
+nomeAluno = str(input("Qual seu nome?"))
+nota1 = float(input("Qual a sua primeira nota?"))
+nota2 = float(input("Qual a sua segunda nota?"))
+mediaNota = (nota1+nota2)/2
+if (mediaNota<4):
+    print("Reprovado")
+elif (mediaNota>=4) and (mediaNota<=7):
+    print("Recuperação")
+else:
+    print("Aprovado")
