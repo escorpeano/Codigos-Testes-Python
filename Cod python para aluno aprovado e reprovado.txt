@@ -1,0 +1,11 @@
+Código no Python do Aluno aprovado e reprovado
+
+nomeAluno = str(input("Qual seu nome?"))
+nota1 = float(input("Qual a sua primeira nota?"))
+nota2 = float(input("Qual a sua segunda nota?"))
+faltas = int(input("Quatas faltas você tem?"))
+mediaNota = (nota1+nota2)/2
+if (mediaNota>=7) and (faltas<=3):
+    print("Aluno",nomeAluno,"Aprovado")
+else:
+    print("Aluno", nomeAluno, "Reprovado")
